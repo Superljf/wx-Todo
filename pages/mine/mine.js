@@ -1,11 +1,12 @@
-
+var jsonData = require("../../data/news.js")
 Page({
   data: {
-
+      
   },
   onLoad: function () {
-    var that = this;
-    
+    this.setData({
+      datalist: jsonData.datalist 
+    });
   },
   showModal(e) {
     this.setData({

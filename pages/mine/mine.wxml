@@ -13,6 +13,13 @@
         <text class="cuIcon-title text-orange "></text> 消息列表
       </view>
     </view>
+    <!-- 消息渲染 -->
+      <view wx:for="{{datalist}}" class="newslist">
+          <text>
+              {{item.id}}
+          </text> 
+          <text> {{item.new}}</text>
+      </view>
     <!-- 员工资料 -->
     <view class="cu-bar bg-white margin-top">
       <view class="action">
