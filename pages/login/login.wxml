@@ -1,0 +1,38 @@
+ <view class="container"> 
+ <view class="login-icon"> 
+ <image class="login-img" src="../../images/theme.jpg"></image> 
+ </view> 
+<view class="login-from">  
+  
+ <!--账号-->
+ <view class="inputView">   
+  <image class="nameImage" src="../../images/icons/ID.png"></image> 
+  <label class="loginLab">账号</label> 
+  <input class="inputText" placeholder="请输入账号" bindinput="name" /> 
+ </view> 
+ <view class="line"></view> 
+  
+ <!--密码-->
+ <view class="inputView"> 
+  <image class="keyImage" src="../../images/icons/pwd.png"></image> 
+  <label class="loginLab">密码</label> 
+  <input class="inputText" password="true" placeholder="请输入密码" bindinput="password" /> 
+ </view> 
+  
+ <!--按钮-->
+ <!-- <view class="loginBtnView"> 
+  <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="login">登录</button> 
+ </view>  -->
+
+    <view class="button-sp-area">
+            <button class="weui-btn mini-btn" type="primary" size="mini" bindtap="login">登录</button>
+            <!-- <button class="weui-btn mini-btn" type="default" size="mini">按钮</button> -->
+            <button class="weui-btn mini-btn" type="warn" size="mini" bindtap="reset">重置</button>
+    </view>
+ </view>  
+  <view class="weui-footer">
+            <view class="weui-footer__text">Copyright © 2019-9-10 教师节</view>
+     </view>
+ </view>
+  
+

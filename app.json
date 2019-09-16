@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/login/login",
+     "pages/mine/mine",
+    "pages/date/date",
+    "pages/order/order",
+    "pages/article/article"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#94B09A",
+    "navigationBarTitleText": "TODO助手",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "#3366cc",
+    "backgroundColor": "#CBD5BF",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/date/date",
+        "text": "日程",
+        "iconPath": "images/icons/date.png",
+        "selectedIconPath": "images/icons/clickdate.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "预约",
+        "iconPath": "images/icons/orders.png",
+        "selectedIconPath": "images/icons/clickorders.png"
+      },
+      {
+        "pagePath": "pages/article/article",
+        "text": "文章",
+        "iconPath": "images/icons/article.png",
+        "selectedIconPath": "images/icons/clickarticle.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/icons/my.png",
+        "selectedIconPath": "images/icons/clickmy.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
