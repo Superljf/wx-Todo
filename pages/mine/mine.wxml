@@ -1,5 +1,6 @@
+
 <view class="container">
-  <!-- 头像部分 -->
+   <!-- 头像部分 -->
   <view class="avatar">  
   <view class="padding">
     <view class="cu-avatar xl round margin-left" style="background-image:url(../../images/avatar.jpg);"></view>
@@ -13,17 +14,15 @@
         <text class="cuIcon-title text-orange "></text> 消息列表
       </view>
     </view>
-    <!-- 消息渲染 -->
-      <view wx:for="{{datalist}}" class="newslist">
-          <text>
-              {{item.id}}
-          </text> 
-          <text> {{item.new}}</text>
+    <!-- 消息列表展示 -->
+      <view wx:for="{{datalist}}" class="newslist" wx:key="news">
+          <text>{{item.id}}</text> 
+          <text>{{item.new}}</text>
       </view>
     <!-- 员工资料 -->
     <view class="cu-bar bg-white margin-top">
       <view class="action">
-        <text class="cuIcon-title text-orange "></text> 员工资料
+        <text class="cuIcon-title text-orange "></text>员工资料
       </view>
       <view class="action">
         <button class="cu-btn bg-green shadow" bindtap="showModal" data-target="DrawerModalL">详情</button>
@@ -31,10 +30,25 @@
     </view>
     <view class="cu-modal drawer-modal justify-start {{modalName=='DrawerModalL'?'show':''}}" bindtap="hideModal">
       <view class="cu-dialog basis-lg" catchtap style="top:{{CustomBar}}px;height:calc(100vh - {{CustomBar}}px)">
-        <view class="cu-list menu text-left">
-          <view class="cu-item arrow" wx:for="{{5}}" wx:key>
+        <view class="cu-list menu text-left" >
+          <view class="cu-item arrow"  wx:key bindtap="showinfo">
             <view class="content">
-              <view>Item {{index +1}}</view>
+              <view>开发资料</view>
+            </view>
+          </view>
+           <view class="cu-item arrow"  wx:key bindtap="showinfo">
+            <view class="content">
+              <view>行政资料</view>
+            </view>
+          </view>
+          <view class="cu-item arrow"  wx:key bindtap="showinfo">
+            <view class="content">
+              <view>财务资料</view>
+            </view>
+          </view>
+          <view class="cu-item arrow"  wx:key bindtap="showinfo">
+            <view class="content">
+              <view>人事资料</view>
             </view>
           </view>
         </view>
@@ -44,7 +58,7 @@
     <view class="cu-modal drawer-modal justify-end {{modalName=='DrawerModalR'?'show':''}}" bindtap="hideModal">
       <view class="cu-dialog basis-lg" catchtap style="top:{{CustomBar}}px;height:calc(100vh - {{CustomBar}}px)">
         <view class="cu-list menu text-left">
-          <view class="cu-item arrow" wx:for="{{5}}" wx:key>
+          <view class="cu-item arrow" wx:key>
             <view class="content">
               <view>Item {{index +1}}</view>
             </view>
@@ -68,9 +82,27 @@
         <view class="cu-dialog" catchtap>
           <radio-group class="block">
             <view class="cu-list menu text-left">
-              <view class="cu-item" wx:for="{{5}}" wx:key>
+              <view class="cu-item"  wx:key>
                 <label class="flex justify-between align-center flex-sub">
-                  <view class="flex-sub">Item {{index +1}}</view>
+                  <view class="flex-sub" bindtap="addleader"> 上级1</view>
+                  <radio class="round"></radio>
+                </label>
+              </view>
+              <view class="cu-item"  wx:key>
+                <label class="flex justify-between align-center flex-sub">
+                  <view class="flex-sub"> 上级2</view>
+                  <radio class="round"></radio>
+                </label>
+              </view>
+              <view class="cu-item"  wx:key>
+                <label class="flex justify-between align-center flex-sub">
+                  <view class="flex-sub"> 上级3</view>
+                  <radio class="round"></radio>
+                </label>
+              </view>
+              <view class="cu-item"  wx:key>
+                <label class="flex justify-between align-center flex-sub">
+                  <view class="flex-sub"> 上级4</view>
                   <radio class="round"></radio>
                 </label>
               </view>
@@ -79,5 +111,10 @@
         </view>
       </view>
     </view>
+    <!-- 上级信息展示 -->
+        <view class="leaderinfo">
+            <text>我的上级</text>
+        </view>
   </view>
-</view>
+  </view>
+

@@ -1,0 +1,7 @@
+/* common/info/info.wxss */
+
+.container {
+  width: 50%;
+  height: 50%;
+  background-color: greenyellow;
+}

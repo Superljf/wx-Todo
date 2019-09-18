@@ -1,0 +1,6 @@
+<template name="info">
+    <view class="container">
+        <text class="">前端开发</text>
+        
+    </view>
+</template>

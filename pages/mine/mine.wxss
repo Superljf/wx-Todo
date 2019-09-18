@@ -33,3 +33,10 @@
   background-color: #fff;
   height: 40px;
 }
+.leaderinfo {
+  border: 1px solid #D7F0DB;
+  background-color: #fff;
+  height: 40px;
+}
+
+

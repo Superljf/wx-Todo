@@ -1,0 +1,6 @@
+<!--common/info/info.wxml-->
+<view class="container">
+    <text>开发资料</text>
+            前端开发
+            后端开发
+</view>

@@ -1,10 +1,11 @@
 {
   "pages": [
     "pages/login/login",
-     "pages/mine/mine",
     "pages/date/date",
     "pages/order/order",
-    "pages/article/article"
+    "pages/article/article",
+    "pages/mine/mine",
+    "common/info/info"
   ],
   "window": {
     "backgroundTextStyle": "light",
