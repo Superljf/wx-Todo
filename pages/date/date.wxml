@@ -17,7 +17,7 @@
     <view>{{}}</view>
     <text class="txt">创建人</text>
     <view>{{}}</view>
-     <button class="cu-btn bg-blue margin-tb-sm lg">确认完成</button>
+     <button class="cu-btn bg-blue margin-tb-sm lg" bindtap="finish">确认完成</button>
   </view>
     
 </view>
@@ -36,7 +36,7 @@
   >
   </calendar>
   <button class=" cu-btn bg-blue margin-tb-sm lg" bindtap="addtask">+添加任务</button>
-  
+
   </view>
 </view>
  

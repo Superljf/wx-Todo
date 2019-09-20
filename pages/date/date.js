@@ -9,6 +9,10 @@ Page({
       currentTab: e.currentTarget.dataset.idx
     })
   },
+  // 待办事项完成
+  finish() {
+
+  },
   // 日历实现
   addtask (e) {
     // 获取当前的年月
