@@ -1,4 +1,5 @@
 // common/info/info.js
+var WxParse = require('../../wxParse/wxParse.js');
 Page({
 
   /**

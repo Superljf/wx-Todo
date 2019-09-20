@@ -29,3 +29,28 @@ page{
   height: 4rpx;
   background: #FFCC00;
 }
+/* 今日待办 */
+.unfinish {
+  background-color: #D7F0DB;
+  height: 500px;
+}
+.unfinish .txt {
+  font-size: 14px;
+  display: block;
+  background-color: #fff;
+  height: 40px;
+  border-top: 3px solid #D7F0DB;
+  border-radius: 4px;
+}
+.cu-btn {
+  width: 100%;
+}
+
+/* 我的日程 */
+.date .cu-btn {
+  width: 50%;
+  float: right;
+  padding: 20px;
+}
+
+
