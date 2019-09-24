@@ -113,7 +113,7 @@
     </view>
     <!-- 上级信息展示 -->
         <view class="leaderinfo">
-            <text>我的上级</text>
+            <text>{{items}}</text>
         </view>
   </view>
   </view>
