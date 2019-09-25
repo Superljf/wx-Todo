@@ -74,47 +74,14 @@
           <text class="cuIcon-title text-orange "></text> 添加上级
         </view>
         <view class="action">
-          <button class="cu-btn bg-green shadow" bindtap="showModal" data-target="RadioModal">添加</button>
+          <button class="cu-btn bg-green shadow" bindtap="addleader" data-target="RadioModal">添加</button>
         </view>
       </view>
-
-      <view class="cu-modal {{modalName=='RadioModal'?'show':''}}" bindtap="hideModal">
-        <view class="cu-dialog" catchtap>
-          <radio-group class="block">
-            <view class="cu-list menu text-left">
-              <view class="cu-item"  wx:key>
-                <label class="flex justify-between align-center flex-sub">
-                  <view class="flex-sub"> 上级1</view>
-                  <radio class="round"  bindtap="addleader"></radio>
-                </label>
-              </view>
-              <view class="cu-item"  wx:key>
-                <label class="flex justify-between align-center flex-sub">
-                  <view class="flex-sub"> 上级2</view>
-                  <radio class="round"></radio>
-                </label>
-              </view>
-              <view class="cu-item"  wx:key>
-                <label class="flex justify-between align-center flex-sub">
-                  <view class="flex-sub"> 上级3</view>
-                  <radio class="round"></radio>
-                </label>
-              </view>
-              <view class="cu-item"  wx:key>
-                <label class="flex justify-between align-center flex-sub">
-                  <view class="flex-sub"> 上级4</view>
-                  <radio class="round"></radio>
-                </label>
-              </view>
-            </view>
-          </radio-group>
-        </view>
-      </view>
+  </view>
+  <!-- 数据列表 -->
+   <view class="leaderlist">
+        <view>{{leader.name}}</view>  
     </view>
-    <!-- 上级信息展示 -->
-        <view class="leaderinfo">
-            <text>{{items}}</text>
-        </view>
-  </view>
-  </view>
+</view>
+</view>
 

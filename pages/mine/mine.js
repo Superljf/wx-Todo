@@ -61,7 +61,9 @@ Page({
   },
   // 添加上下级
   addleader() {
-    console.log("success")
+    wx.navigateTo ({
+      url: '../../common/leaderlist/leaderlist'
+    })
   }
 })
 

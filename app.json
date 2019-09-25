@@ -6,7 +6,8 @@
     "pages/order/order",
     "pages/article/article",
     
-    "common/info/info"
+    "common/info/info",
+    "common/leaderlist/leaderlist"
   ],
   "window": {
     "backgroundTextStyle": "light",
