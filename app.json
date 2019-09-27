@@ -1,11 +1,11 @@
 {
   "pages": [
+    "pages/date/date",
     "pages/mine/mine",
     "pages/login/login",
-    "pages/date/date",
+   
     "pages/order/order",
     "pages/article/article",
-    
     "common/info/info",
     "common/leaderlist/leaderlist"
   ],

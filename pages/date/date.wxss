@@ -34,16 +34,20 @@ page{
   background-color: #D7F0DB;
   height: 500px;
 }
-.unfinish .txt {
-  font-size: 14px;
-  display: block;
-  background-color: #fff;
-  height: 40px;
-  border-top: 3px solid #D7F0DB;
-  border-radius: 4px;
+.unfinish .fiitem {
+      display: flex;
+      z-index: 99;
+      height: 200rpx;
+      font-size: 30rpx;
+      padding-top: 20rpx;
+}
+.fiitem .itemli {
+  flex: 1;
+  text-align: center;
 }
 .cu-btn {
-  width: 100%;
+  width: 30%;
+  float: right;
 }
 
 /* 我的日程 */

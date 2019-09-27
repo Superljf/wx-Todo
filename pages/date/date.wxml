@@ -6,17 +6,16 @@
  
 <!--待办-->
 <view hidden="{{currentTab!==0}}">
+  <!-- flex布局  可复用 -->
   <view class="unfinish">
-    <text class="txt">状态</text>
-    <view>{{}}</view>
-    <text class="txt" >标题</text>
-    <view>{{}}</view>
-    <text class="txt" >任务类型</text>
-    <view>{{}}</view>
-    <text class="txt" >任务日期</text>
-    <view>{{}}</view>
-    <text class="txt">创建人</text>
-    <view>{{}}</view>
+      <view class="fiitem">
+        <view class="itemli">状态</view>
+           <view class="itemli">标题</view>
+              <view class="itemli">任务类别</view>
+                 <view class="itemli">任务日期</view>
+                  <view class="itemli">创建人</view>
+      </view>
+        
      <button class="cu-btn bg-blue margin-tb-sm lg" bindtap="finish">确认完成</button>
   </view>
     
@@ -42,10 +41,20 @@
  
 <!--概况-->
 <view hidden="{{currentTab!==2}}">
-  tab_03
+  <view class="unfinish">
+      <view class="fiitem">
+        <view class="itemli">我的工作概况</view>
+         <view class="itemli">员工工作概况</view>
+        <view class="itemli">未来七天工作预览</view>
+               
+      </view>
+</view>
 </view>
 
 <!--事项-->
 <view hidden="{{currentTab!==3}}">
-  tab_04
+  <view>
+    我的全部事项
+  </view>
+    
 </view>
