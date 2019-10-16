@@ -48,6 +48,7 @@ page{
 .cu-btn {
   width: 30%;
   float: right;
+  border-radius: 4px;
 }
 
 /* 我的日程 */
@@ -55,6 +56,7 @@ page{
   width: 50%;
   float: right;
   padding: 20px;
+ 
 }
 
 
